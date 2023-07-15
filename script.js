@@ -3,13 +3,13 @@ function volume_sphere() {
     const radiusElement = document.getElementById("radius");
     const volumnElement = document.getElementById("volume");
 
-	const intVal = 0 - (-radiusElement.value);  
-  
+	const intVal = radiusElement.value;  
 	
-	const vol = 4/3 *Math.PI * intVal**3;
-	
-  
-	volumnElement.value = vol+"";
+	const vol = ((4/3) *Math.PI * (intVal**3));
+
+	volumnElement.value = vol;
+
+    return false;
 	
 } 
-document.getElementById('MyForm').onsubmit = volume_sphere;
+window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
