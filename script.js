@@ -5,7 +5,7 @@ function volume_sphere() {
 
 	const intVal = radiusElement.value;  
 	
-	const vol = ((4/3) *Math.PI * (intVal**3));
+	const vol = ((4/3) *Math.PI * (intVal**3)).toFixed(4);
 
 	volumnElement.value = vol;
 
